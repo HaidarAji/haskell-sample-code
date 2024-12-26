@@ -1,0 +1,49 @@
+# Haskell binaries and object files
+*.hi
+*.o
+*.p_o
+*.dyn_o
+*.dyn_hi
+
+# Stack and Cabal build artifacts
+.stack-work/
+dist/
+dist-newstyle/
+cabal.project.local
+setup-config
+.stack-work-install/
+
+# Haskell-specific temp files
+.hsenv/
+.hpc/
+.cabal-sandbox/
+*.prof
+*.eventlog
+
+# ghci-related files
+*.ghc.environment.*
+.ghci_history
+.ghci
+.ghc/
+
+# Haskell REPL temporary files
+*.tix
+*.chi
+*.chs.h
+
+# Common editor files
+*.swp
+*.swo
+*~
+\#*\#
+.DS_Store
+*.tmp
+*.bak
+
+# Tags and IDE-specific files
+.tags
+*.tags
+.idea/
+.vscode/
+*.iml
+
