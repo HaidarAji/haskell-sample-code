@@ -82,6 +82,14 @@ myFoldr :: (a -> b -> b) -> b -> [a] -> b
 myFoldr f v [] = v
 myFoldr f v (x:xs) = f x (myFoldr f v xs)
 
+zFoldr :: (a -> b -> b) -> b -> [a] -> b
+zFoldr _ v [] = v
+zFoldr f v (x:xs) = f x (zFoldr f v xs)
+
+zFoldl :: (b -> a -> b) -> b -> [a] -> b
+zFoldl _ v [] = v
+zFoldl f v (x:xs) = zFoldl f (f v x) xs
+
 snoc :: a -> [a] -> [a]
 snoc x xs = xs ++ [x]
 
